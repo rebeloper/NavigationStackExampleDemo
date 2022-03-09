@@ -22,6 +22,18 @@ struct NavigationStackExampleDemoApp: App {
 //                .environmentObject(feedContainerNavigation)
 //                .environmentObject(postsContainerNavigation)
 //                .environmentObject(settingsContainerNavigation)
+//                .onOpenURL { url in
+//                    deepLink()
+//                }
+                .onAppear {
+//                    deepLink()
+                }
         }
+    }
+    
+    func deepLink() {
+//        $homeContainerNavigation.flow.present(.homeSecond, options: .init(style: .sheet)) {
+//            $homeContainerNavigation.flow.present(.homeThird(title: "Deep Link"))
+//        }
     }
 }
